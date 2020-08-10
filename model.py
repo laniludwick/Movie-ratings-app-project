@@ -6,6 +6,7 @@ db = SQLAlchemy()
 
 from datetime import datetime
 
+
 class User(db.Model):
     """A user."""
 
@@ -78,6 +79,9 @@ def connect_to_db(flask_app, db_uri='postgresql:///ratings', echo=True):
     db.init_app(flask_app)
 
     print('Connected to the db!')
+
+
+
 
 
 if __name__ == '__main__':
